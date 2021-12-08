@@ -9,3 +9,5 @@ Possibly we can define an open standard for this.
    * RFC (Request for Comments) holding the description for the Generic Delivery Pipeline GUI
 2. [discussion](discussion.md)
    * working document for discussions and ideas
+3. [authorization](authorization.md)
+   * working document for discussions and ideas concerning permissions/authorization
