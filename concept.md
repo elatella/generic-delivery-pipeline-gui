@@ -83,16 +83,23 @@ The menu is located on the left side.
 #### Start page
 
 This is the start page showing the pipeline groups and pipelines as a list.
+
 Only the elements a user is entitled to are shown.
+
+![Start page](images/start-page.svg)
 
 The main element is a list showing all pipelines. The elements of the list can be a pipeline itself or a pipeline group.
 
-#### Overview page
+* Clicking on an element of type *pipeline group* will reduce the list to this group.
+* Clicking on an element of type *pipeline* will open to the *pipeline page*.
 
-This is the overview page of a pipeline run.
-Only the elements a user is entitled to are shown.
+#### Pipeline page
 
-The main element is a list showing all pipelines. The elements of the list can be a pipeline itself or a pipeline group.
+This is the overview page of a *Pipeline*.
+
+The main element is a list showing all pipeline run's.
+
+![Pipeline page](images/pipeline-page.svg)
 
 * List of (all) runs
 * Groupings
@@ -105,14 +112,6 @@ The main element is a list showing all pipelines. The elements of the list can b
   * Time of the last update
   * Possibility to update the data manually (optional)
 
-**Pipeline Groups**
-
-![Pipeline Groups](images/pipeline-groups.svg)
-
-**Pipeline Group**
-
-![Pipeline Group](images/pipeline-group.svg)
-
 ##### Information about a run
 
 * ID
@@ -123,10 +122,6 @@ The main element is a list showing all pipelines. The elements of the list can b
 * Overview with the individual stages
   * Status of the stages
 * Click / link on Run opens Run detail page
-
-**Pipeline Overview**
-
-![Pipeline Overview](images/pipeline-overview.svg)
 
 #### Run detail page
 
