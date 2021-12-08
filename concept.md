@@ -27,6 +27,10 @@ This document does not attempt to:
 
 ### Definitions of terms
 
+#### Pipeline group
+
+Container for one or more pipelines. The group has a name and a list of pipelines.
+
 #### Pipeline
 
 A pipeline consists of one or more stages.
@@ -34,6 +38,8 @@ A pipeline consists of one or more stages.
 For example:
 
 ![Delivery Pipeline Overview](images/delivery-pipeline-overview.svg)
+
+Find the complete definition here: [Delivery Pipeline Concept](https://github.com/puzzle/delivery-pipeline-concept)
 
 #### Stage
 
@@ -58,7 +64,35 @@ A run always refers to an individual execution of a specific pipeline.
 
 #### Components
 
+##### Navigation bar
+
+On top the navigation bar provides a home button and shows information's about the user and the data status.
+
+Elements:
+
+* home button
+* logged-in user
+* data status
+  * Time of the last update of the data
+  * Possibility to update the data manually (optional)
+
+##### Menu
+
+The menu is located on the left side.
+
+#### Start page
+
+This is the start page showing the pipeline groups and pipelines as a list.
+Only the elements a user is entitled to are shown.
+
+The main element is a list showing all pipelines. The elements of the list can be a pipeline itself or a pipeline group.
+
 #### Overview page
+
+This is the overview page of a pipeline run.
+Only the elements a user is entitled to are shown.
+
+The main element is a list showing all pipelines. The elements of the list can be a pipeline itself or a pipeline group.
 
 * List of (all) runs
 * Groupings
@@ -68,7 +102,7 @@ A run always refers to an individual execution of a specific pipeline.
   * [ ] separate tab, view or page?
   * including history
 * data status
-  *Time of the last update
+  * Time of the last update
   * Possibility to update the data manually (optional)
 
 **Pipeline Groups**
