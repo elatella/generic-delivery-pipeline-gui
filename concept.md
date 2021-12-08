@@ -147,13 +147,6 @@ These should be available for:
 * Pipelines
 * Stages
 
-### authorization concept
-
-* [ ] Access to Build Server / Data Source
-* [ ] Restriction to groups / pipelines?
-  * ~~possibly with access as a logged in user~~
-  * possibly configuration file in VCS
-
 ### view model
 
 * [ ] TODO
