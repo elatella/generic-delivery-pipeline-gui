@@ -27,7 +27,7 @@ This document does not attempt to:
 
 ### Definitions of terms
 
-#### pipeline
+#### Pipeline
 
 A pipeline consists of one or more stages.
 
