@@ -85,6 +85,8 @@ The menu is located on the left side.
 This is the start page showing the pipeline groups and pipelines as a list.
 Only the elements a user is entitled to are shown.
 
+![Start page](images/start-page.svg)
+
 The main element is a list showing all pipelines. The elements of the list can be a pipeline itself or a pipeline group.
 
 #### Overview page
@@ -92,7 +94,7 @@ The main element is a list showing all pipelines. The elements of the list can b
 This is the overview page of a pipeline run.
 Only the elements a user is entitled to are shown.
 
-The main element is a list showing all pipelines. The elements of the list can be a pipeline itself or a pipeline group.
+The main element is a list showing all pipeline run's.
 
 * List of (all) runs
 * Groupings
