@@ -21,6 +21,7 @@ Plugins / Importer für Build Tools
 * CircleCI
 * Travis
 * TeamCity
+* ConcourseCI
 * ...
 
 
