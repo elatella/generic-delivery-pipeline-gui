@@ -19,3 +19,11 @@ How does the GUI get this information?
 * read em from a configuration file placed in the VCS
 * further ideas (TODO)
 
+### Read users/permissions by API call
+
+####GitLab
+`/api/v4/groups/{{groupId}}/members`
+`/api/v4/projects/{{projectId}}/members`
+Returns a list of `username`s including their numeric `access_level`
+
+
