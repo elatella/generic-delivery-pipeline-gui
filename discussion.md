@@ -96,7 +96,7 @@ Quality requirements:
 
 * [ ] Treat vulnerabilities like tests?
 
-* [ ] Requirements for the acutality of the data
+* [ ] Requirements for the actuality of the data
   * [ ] Log outputs in "real time"?
   * [x] option to update manually?
 
@@ -107,7 +107,7 @@ Quality requirements:
 * Structure
   * Project with multiple pipelines? (e.g. different environments)
     * Pipeline triggers another pipeline? (linkable pipelines) -> Jenkins
-    * A pipline with multiple stages? (with manually executable triggers) -> GitLab
+    * A pipeline with multiple stages? (with manually executable triggers) -> GitLab
 
 * Steering
   * Pipeline
