@@ -26,4 +26,8 @@ How does the GUI get this information?
 `/api/v4/projects/{{projectId}}/members`
 Returns a list of `username`s including their numeric `access_level`
 
-
+####Github
+`api.github.com/orgs/{{organizationName}}/members`
+Returns a list of organization `members` with their `login` and `type`
+`api.github.com/repos/{{organizationName}}/{{repoName}}/contributors` 
+Returns a list of `contributors` with their `login` and `type`
