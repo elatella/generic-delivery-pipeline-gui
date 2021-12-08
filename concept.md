@@ -33,7 +33,7 @@ A pipeline consists of one or more stages.
 
 For example:
 
-! [Delivery Pipeline Overview](https://raw.githubusercontent.com/chrira/delivery-pipeline-concept/images/images/delivery-pipeline-overview.svg)
+![Delivery Pipeline Overview](https://raw.githubusercontent.com/chrira/delivery-pipeline-concept/images/images/delivery-pipeline-overview.svg)
 
 #### Stage
 
@@ -41,7 +41,7 @@ A stage is divided into one or more steps.
 
 For example:
 
-! [Build Stage Overview](https://raw.githubusercontent.com/chrira/delivery-pipeline-concept/images/images/build-stage.svg)
+![Build Stage Overview](https://raw.githubusercontent.com/chrira/delivery-pipeline-concept/images/images/build-stage.svg)
 
 #### Step
 
@@ -71,10 +71,12 @@ A run always refers to an individual execution of a specific pipeline.
 * Possibility to update the data manually (optional)
 
 **Pipeline Groups**
-! [Pipeline Groups](https://raw.githubusercontent.com/chrira/delivery-pipeline-concept/images/images/pipeline-groups.svg)
+
+![Pipeline Groups](https://raw.githubusercontent.com/chrira/delivery-pipeline-concept/images/images/pipeline-groups.svg)
 
 **Pipeline Group**
-! [Pipeline Group](https://raw.githubusercontent.com/chrira/delivery-pipeline-concept/images/images/pipeline-group.svg)
+
+![Pipeline Group](https://raw.githubusercontent.com/chrira/delivery-pipeline-concept/images/images/pipeline-group.svg)
 
 ##### Information about a run
 
@@ -88,7 +90,8 @@ A run always refers to an individual execution of a specific pipeline.
 * Click / link on Run opens Run-Detail page
 
 **Pipeline Overview**
-! [Pipeline Overview](https://raw.githubusercontent.com/chrira/delivery-pipeline-concept/images/images/pipeline-overview.svg)
+
+![Pipeline Overview](https://raw.githubusercontent.com/chrira/delivery-pipeline-concept/images/images/pipeline-overview.svg)
 
 #### Run detail page
 
@@ -181,7 +184,7 @@ These should be available for:
 #### Tekton
 
 * API-Doc: K8S with Tekton CRD
-* Tektion CLI (tkn): <https://github.com/tektoncd/cli/tree/main/docs>
+* Tekton CLI (tkn): <https://github.com/tektoncd/cli/tree/main/docs>
 * authentication: with OC Tool (OpenShift) or kubectl (K8S)
 
 #### TeamCity
