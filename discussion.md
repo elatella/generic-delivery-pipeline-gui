@@ -1,172 +1,145 @@
-# Generisches Delivery Pipeline GUI
+# Discussion
 
-Wir möchten ein Build-Tool unabhängiges UI für Build / Delivery Pipelines anbieten können.
-Ev. können wir gerade einen [Open Standard](https://fsfe.org/freesoftware/standards/def.de.html) dazu definieren.
+**Additional information:**
 
-**Weiterführende Informationen:** 
-
-Generische Ansichten
+Generic views
 
 * Build
-* Reports (Tests, Security, Scanning, ...)
-* Pipeline Abhängigkeiten
+* Reports (tests, security, scanning, ...)
+* Pipeline dependencies
 
-
-Plugins / Importer für Build Tools
+Plugins / importers for build tools like
 
 * Jenkins
 * GitLab CI/CD
 * Tekton
-* GitHub Workflows
+* GitHub workflows
 * CircleCI
 * Travis
 * TeamCity
 * ConcourseCI
 * ...
 
+## Info
 
-## Ziel
-
-1. Definition erstellen
-2. In Open Standard Format bringen https://codimd.puzzle.ch/GenerischesDeliveryPipelineKonzept
-3. Blogpost
-4. ~~Referenzimplementierung~~
-
-## Infos
-
-* https://github.com/puzzle/delivery-pipeline-concept
-* Mobitor: https://bitbucket.org/mobiliar/
-  * Infos zu Build und Umgebungen
+* <https://github.com/puzzle/delivery-pipeline-concept>
+* Mobitor: <https://bitbucket.org/mobiliar/>
+  * Information on build and environments
   * Plugin Based
-  * div. Plugins zur Infobeschaffung
+  * various plugins for obtaining information
 
-## Umsetzung
+## Implementation
 
-Mo - Mi
-
-* Bestandesaufnahme
+* Inventory
   * Must have
-  * Vergleich versch. Tools mit Pro's und Con's
-  * 
-
-
+  * Comparison of different tools with Pro's and Con's
 
 ### Must have
 
 Stages:
 
 1. Build and Unit Tests
-    * Code Compilation and Build
-      * Resultat
+   * Code Compilation and Build
+      * Results
       * Logs
-    * Unit Tests
-      * siehe Allgemein
-    * Static Analysis
-      * siehe Allgemein
-    * Dependency Checks
-      * inkl. Licenses
-    * Artifact Generation
+   * Unit tests
+      * see general
+   * Static Analysis
+      * see general
+   * Dependency checks
+      * including licenses
+   * Artifact Generation
 2. Packaging
-3. Automated Tests
+3. Automated tests
 4. ~~Manual Tests~~
 5. Release
 
-Allgemein:
+Generally:
 
 * Naming
-  * Jobs/Stages/Workflows ...
-  * Runs/Executions ...
+  * Jobs / Stages / Workflows ...
+  * Runs / Executions ...
 * Test
-  * Resultat
-    * Anzahl gefailter Tests
-    * Anzahl neu gefailter Tests
-    * Flaky Tests?
-    * Historie / Veränderung (Grafisch?)
-    * Test-Detail-Seite à la Gradle da strukturiert/gruppiert nach Package 
-      (bei Jenkins nicht ganz so toll, da ALLE Unittests angezeigt werden, bei GitLab eher zu spartanisch)
+  * Result
+    * Number of failed tests
+    * Number of newly failed tests
+    * Flaky tests?
+    * History / change (graphically?)
+    * Test detail page à la Gradle because it is structured / grouped according to package
+      * (not so great with Jenkins, as ALL unit tests are displayed, with GitLab rather too spartan)
   * Logs
   * Stacktrace
 
 * Static Analysis
-  * Resultat
-    * Success/Failure (optional inkl. Coverage)
-    * Historie / Veränderung (Grafisch?)
+  * Result
+    * Success / Failure (optional including coverage)
+    * History / change (graphically?)
 
-Rest:
+Div:
 
-* PR/MR
+* PR / MR
 * Triggering
-* manuelle Steuerung
+* manual control
 
-Qualitätsanforderungen:
+Quality requirements:
 
-* GUI nicht überladen
-  * was wann anzeigen? (weniger ist mehr/wieviel ist zu viel?)
+* GUI not overloaded
+  * show what and when? (less is more / how much is too much?)
 
-### Resultate
-* Aktualisierung/Konsolidierung des Pipeline Konzepts
+### TODO / questions
 
-### TODO / Fragen
+* [ ] other concepts
+  * [ ] <https://concourse-ci.org/>
+    * [ ] **https: //github.com/concourse/rfcs**
+  * [ ] <https://harness.io/>
+    * [ ] <https://harness.io/learn/ebooks/ebook-pipeline-patterns>
 
-* [ ] andere Konzepte
-  * [ ] https://concourse-ci.org/
-    * [ ] **https://github.com/concourse/rfcs**
-  * [ ] https://harness.io/
-    * [ ] https://harness.io/learn/ebooks/ebook-pipeline-patterns
+* [ ] Treat vulnerabilities like tests?
 
-* [ ] Vulnerabilities so wie Tests behandeln?
-
-* [ ] Anforderungen an Aktualität der Daten
-  * [ ] Logausgaben in "Echtzeit"?
-  * [x] Option zum manuellen Aktualisieren? 
+* [ ] Requirements for the acutality of the data
+  * [ ] Log outputs in "real time"?
+  * [x] option to update manually?
 
 * BaseImage Update?
-  * nur Image Bauen
-  * Stages skippen
+  * Build image only
+  * Skipping stages
 
-* Struktur
-  * Projekt mit mehreren Pipelines? (etwa verschiedene Umgebungen)
-    * Pipeline triggert weitere Pipeline? (verlinkbare Pipelines) -> Jenkins
-    * Eine Pipline mit mehreren Stages? (mit manuell ausführbaren Triggern) -> GitLab
+* Structure
+  * Project with multiple pipelines? (e.g. different environments)
+    * Pipeline triggers another pipeline? (linkable pipelines) -> Jenkins
+    * A pipline with multiple stages? (with manually executable triggers) -> GitLab
 
-* Steuerung
+* Steering
   * Pipeline
-    * starten
-    * stoppen
+    * start
+    * to stop
     * restart
   * Stages
-    * starten
-    * stoppen
+    * start
+    * to stop
     * restart
 
-* Details / Zusatzinfos
+* Details / additional information
   * Run
-      * Zeitpunkt/Dauer der Ausführung
-      * Benutzer/Hook, welcher den Run gestartet hat
-      * SCM(Git)-Infos
-      * Übersicht mit den einzelnen Stages
-      * GitLab als macht diesen Teil sehr gut
-      * Test-Summary (Anzahl erfolgreicher/gefailter Tests)
-        * Link auf Test-Detail Seite
-      * Buildstabilität à la Jenkins sinnvoll?
-      * Alle Runs als Liste
-      * anhand von Branches gruppierte Runs
-        * inkl. Verlauf/History
-
-* [x] Pipeline Konzept
-  * [x] **@cra**: Reto **Schreibzugriff** für das Repo gewähren
-  * [x] Performance Tests hinzufügen https://github.com/puzzle/delivery-pipeline-concept/blob/master/stages/03-automated-tests/README.md
-  * [x] **@cra**: Docker -> Container (Naming)
-  * [x] Security Checks (Dynamic Application Security Testing (DAST)) nicht statisch -> autom. Test Stage
-  * [x] Readme Link updaten: draw.io -> https://app.diagrams.net/
-
+    * Time / duration of execution
+    * User / hook who started the run
+    * SCM (Git) info
+    * Overview with the individual stages
+    * GitLab as does this part very well
+    * Test summary (number of successful / failed tests)
+      * Link to test details page
+    * Build stability like Jenkins makes sense?
+    * All runs as a list
+      * Runs grouped by branches
+      * including history
 
 ### Babylon
+
 * Jenkins:  Job:   Pipeline > Stages > Steps
 * GitLab:   Run:   Pipeline > Stages > Jobs
 * GitHub:   Run:   Workflow > Jobs > Steps
 * CircleCI: ???:   Workflow > Jobs > Steps
 * Tekton:   Run:   Pipeline > ??? > Tasks
-* TeamCity: Build: 
+* TeamCity: Build:
 
 * **Puzzle:  Run: Pipeline > Stages > Steps**
