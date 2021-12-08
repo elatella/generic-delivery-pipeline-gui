@@ -6,7 +6,7 @@ This document describes the requirements for a generic GUI for delivery pipeline
 
 ## Introduction
 
-### motivation
+### Motivation
 
 There are a number of delivery pipeline solutions. Each of these solutions has a proprietary GUI with its own navigation logic and different naming. With a uniform, generic GUI, the operation of and switching between different delivery pipelines could be simplified.
 
@@ -14,7 +14,7 @@ There are a number of delivery pipeline solutions. Each of these solutions has a
 
 The aim of this document is to define the requirements for a generic GUI for delivery pipelines, which:
 
-* is independent of the delivery pipeline used
+* is independent of the delivery pipeline automation (build server) used
 * is modular
 * can be expanded as required
 * is open source
@@ -33,7 +33,7 @@ A pipeline consists of one or more stages.
 
 For example:
 
-![Delivery Pipeline Overview](https://raw.githubusercontent.com/chrira/delivery-pipeline-concept/images/images/delivery-pipeline-overview.svg)
+![Delivery Pipeline Overview](images/delivery-pipeline-overview.svg)
 
 #### Stage
 
@@ -41,7 +41,7 @@ A stage is divided into one or more steps.
 
 For example:
 
-![Build Stage Overview](https://raw.githubusercontent.com/chrira/delivery-pipeline-concept/images/images/build-stage.svg)
+![Build Stage Overview](images/build-stage.svg)
 
 #### Step
 
@@ -52,13 +52,13 @@ A step is the smallest unit of a pipeline.
 The execution of a pipeline is referred to as a run. You can run a pipeline as often as you like.
 A run always refers to an individual execution of a specific pipeline.
 
-## detailed requirements
+## Detailed requirements
 
 ### GUI
 
-#### components
+#### Components
 
-#### overview page
+#### Overview page
 
 * List of (all) runs
 * Groupings
@@ -67,16 +67,17 @@ A run always refers to an individual execution of a specific pipeline.
 * Ability to group runs based on branches
   * [ ] separate tab, view or page?
   * including history
-* Time of the last update
-* Possibility to update the data manually (optional)
+* data status
+  *Time of the last update
+  * Possibility to update the data manually (optional)
 
 **Pipeline Groups**
 
-![Pipeline Groups](https://raw.githubusercontent.com/chrira/delivery-pipeline-concept/images/images/pipeline-groups.svg)
+![Pipeline Groups](images/pipeline-groups.svg)
 
 **Pipeline Group**
 
-![Pipeline Group](https://raw.githubusercontent.com/chrira/delivery-pipeline-concept/images/images/pipeline-group.svg)
+![Pipeline Group](images/pipeline-group.svg)
 
 ##### Information about a run
 
@@ -87,11 +88,11 @@ A run always refers to an individual execution of a specific pipeline.
 * VCS (Git) info
 * Overview with the individual stages
   * Status of the stages
-* Click / link on Run opens Run-Detail page
+* Click / link on Run opens Run detail page
 
 **Pipeline Overview**
 
-![Pipeline Overview](https://raw.githubusercontent.com/chrira/delivery-pipeline-concept/images/images/pipeline-overview.svg)
+![Pipeline Overview](images/pipeline-overview.svg)
 
 #### Run detail page
 
@@ -101,7 +102,7 @@ A run always refers to an individual execution of a specific pipeline.
   * Status of the stages
   * Steps
     * Status
-    * Click / link on Step opens the Step-Detail page
+    * Click / link on Step opens the Step detail page
 * Test summary (total successful / failed tests)
   * Link to test details page
 
@@ -112,9 +113,9 @@ A run always refers to an individual execution of a specific pipeline.
 * invoker
 * status
 * links
-  * Test detail page (result of this step)
-  * Logs
-  * Stacktrace (for failed steps)
+  * test detail page (result of this step)
+  * logs
+  * stacktrace (for failed steps)
 
 #### Test detail page
 
