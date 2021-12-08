@@ -21,7 +21,7 @@ The aim of this document is to define the requirements for a generic GUI for del
 
 This document does not attempt to:
 
-* to specify a concrete technical implementation
+* specify a concrete technical implementation
 
 ## Specification
 
