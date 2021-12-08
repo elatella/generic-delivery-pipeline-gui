@@ -31,3 +31,6 @@ Returns a list of `username`s including their numeric `access_level`
 Returns a list of organization `members` with their `login` and `type`
 `api.github.com/repos/{{organizationName}}/{{repoName}}/contributors` 
 Returns a list of `contributors` with their `login` and `type`
+`api.github.com/users/{{userName}}/repos`
+Returns a list of `repos` which the user is owner of
+Not too useful, as far...
