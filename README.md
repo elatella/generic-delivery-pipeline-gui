@@ -11,3 +11,19 @@ Possibly we can define an open standard for this.
    * working document for discussions and ideas
 3. [authorization](authorization.md)
    * working document for discussions and ideas concerning permissions/authorization
+
+## About This Repository
+
+### Images
+
+The images are created by [app.diagrams.net](https://app.diagrams.net/) (former draw.io)
+
+Editing:
+
+* The diagram is included in the image.
+* Just load the image into draw.io.
+
+Export:
+
+* check *Transparent Background*
+* check *Include a copy of my diagram*
