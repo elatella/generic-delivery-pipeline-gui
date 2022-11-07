@@ -66,7 +66,7 @@ A run always refers to an individual execution of a specific pipeline.
 
 ##### Navigation bar
 
-On top the navigation bar provides a home button and shows information's about the user and the data status.
+On top the navigation bar provides a home button and shows information about the user and the data status.
 
 Elements:
 
