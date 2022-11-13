@@ -92,7 +92,7 @@ Quality requirements:
   * [ ] <https://concourse-ci.org/>
     * [ ] **https: //github.com/concourse/rfcs**
   * [ ] <https://harness.io/>
-    * [ ] <https://harness.io/learn/ebooks/ebook-pipeline-patterns>
+    * [x] <https://harness.io/learn/ebooks/ebook-pipeline-patterns> ---> Added to [concept](https://github.com/puzzle/delivery-pipeline-concept)
 
 * [ ] Treat vulnerabilities like tests?
 
